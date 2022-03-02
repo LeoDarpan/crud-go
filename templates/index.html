@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Updates</title>
+</head>
+<body>
+    <h1 class="heading">Updates</h1>
+    <div class="user">
+        Welcome
+        <button class="button">Logout</button>
+    </div>
+    <form method="post" class="form">
+        <textarea name="update"cols="50" rows="2"></textarea>
+        <div class="button">
+            <button type="submit">Post comment</button>
+        </div>
+    </form>
+    <div class="updates">
+        {{ range . }}
+            <div class="user">{{ .GetUser.GetUsername }} wrote:</div>
+            <div class="udpate">{{ .GetBody }}</div>
+        {{ end }}
+    </div>
+    
+</body>
+</html>

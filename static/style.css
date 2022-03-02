@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  width: 50%;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
+  border-bottom: 1px solid violet;
+  font-weight: 600;
+}
+.user {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-align: left;
+  width: 70%;
+  margin-block: 10px;
+}
+.user .name {
+  text-decoration: underline;
+}
+.user button {
+  float: right;
+}
+
+.form {
+  margin-block: 10px;
+}
+.form textarea {
+  border: none;
+  border-bottom: 1px solid white;
+  font-family: "Titillium Web", sans-serif;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: white;
+  outline: none;
+  padding: 0;
+}
+.form .button {
+  text-align: center;
+  padding: 10px;
+}
+button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 0.75rem;
+}
+button:hover {
+  background-color: violet;
+  color: white;
+}
+.updates {
+  padding: 10px;
+  border: 1px solid pink;
+  width: 70%;
+}
+.updates div {
+  margin-block: 10px;
+  width: 100%;
+  text-align: left;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5rem;
+}
+.updates .user {
+  color: green;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.update .update {
+  color: white;
+}
